@@ -17,14 +17,19 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Loader2 } from 'lucide-react'
 
-const ProfileForm = () => {
+type Props = {
+  user: any
+  onUpdate?: any
+}
+
+const ProfileForm = ({ user, onUpdate }: Props) => {
   const [isLoading, setIsLoading] = useState(false)
   const form = useForm<z.infer<typeof EditUserProfileSchema>>({
     mode: 'onChange',
     resolver: zodResolver(EditUserProfileSchema),
     defaultValues: {
-      name: '',
-      email: '',
+      name: user.name,
+      email: user.email,
     },
   })
 
@@ -32,10 +37,13 @@ const ProfileForm = () => {
     values: z.infer<typeof EditUserProfileSchema>
   ) => {
     setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
+    await onUpdate(values.name)
+    setIsLoading(false)
   }
+
+  useEffect(() => {
+    form.reset({ name: user.name, email: user.email })
+  }, [user])
 
   return (
     <Form {...form}>
@@ -80,7 +88,7 @@ const ProfileForm = () => {
         />
         <Button
           type="submit"
-          className="self-start hover:bg-[#7540A9] hover:text-white "
+          className="self-start hover:bg-[#2F006B] hover:text-white "
         >
           {isLoading ? (
             <>

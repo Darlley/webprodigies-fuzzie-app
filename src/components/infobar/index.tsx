@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import Link from 'next/link'
 import Logotipo from '../icons/logotipo'
+import { UserButton } from '@clerk/nextjs'
 
 type Props = {}
 
@@ -23,7 +24,7 @@ const InfoBar = (props: Props) => {
       >
         <Logotipo size="sm" />
       </Link>
-      <div  className="flex flex-row justify-end gap-6 items-center w-full">
+      <div className="flex flex-row justify-end gap-6 items-center w-full">
         <span className="flex items-center rounded-full bg-muted px-4">
           <Search />
           <Input
@@ -51,6 +52,7 @@ const InfoBar = (props: Props) => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+        <UserButton />
       </div>
     </div>
   )

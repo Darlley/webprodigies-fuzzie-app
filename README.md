@@ -5,14 +5,15 @@
 - ✅ Setup Nextjs + Shadcn + Aceternity 
 - ✅ Landing Page
 - ✅ Prisma + Docker Container Postgres
-- ❌ Upload Care
-- ❌ Clerk Authentication
+- ✅ Upload Care
+- ✅ Clerk Authentication
+- ❌ Zustand State Manager
+- ❌ React Flow Setup
 - ❌ Payment Stripe Integration
 - ❌ Google Drive Integration
 - ❌ Notion Integration
 - ❌ Discord Integration
 - ❌ Slack Integration
-- ❌ React Flow Setup
 
 Andamento: [https://youtu.be/XkOXNlHJP6M?t=6570](https://youtu.be/XkOXNlHJP6M?t=6570) 1:49:30 min
 
