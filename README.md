@@ -15,6 +15,6 @@
 - ❌ Discord Integration
 - ❌ Slack Integration
 
-Andamento: [https://youtu.be/XkOXNlHJP6M?t=6570](https://youtu.be/XkOXNlHJP6M?t=6570) 1:49:30 min
+Andamento: [https://youtu.be/XkOXNlHJP6M?t=10191](https://youtu.be/XkOXNlHJP6M?t=10191) 2:49:541 min
 
 [![thumb](https://github.com/Darlley/webprodigies-fuzzie-app/blob/main/public/temp-banner.png?raw=true)](https://youtu.be/XkOXNlHJP6M)
